@@ -2,8 +2,8 @@
 
 from flask_sqlalchemy import SQLAlchemy
 
-
 DB = SQLAlchemy()
+
 
 class User(DB.Model):
     """Twitter users that we pull and analyze Tweets for."""
@@ -15,7 +15,7 @@ class User(DB.Model):
         return '<User {}>'.format(self.name)
 
 class Tweet(DB.Model):
-    """Tweets"""
+    """Tweets."""
     id = DB.Column(DB.BigInteger, primary_key=True)
     text = DB.Column(DB.Unicode(500))
     embedding = DB.Column(DB.PickleType, nullable=False)
