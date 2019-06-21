@@ -7,6 +7,12 @@ verify_ssl = true
 
 [packages]
 flask = "*"
+flask-sqlalchemy = "*"
+sqlite3 = "*"
+basilica = "*"
+tweepy = "*"
+python-decouple = "*"
+decouple = "*"
 
 [requires]
 python_version = "3.7"

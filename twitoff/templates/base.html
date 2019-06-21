@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>YouTwitFace! - {{title}}</title>
+        <!-- CSS, keywords, metadata goes here-->
+    </head>
+    
+    <body>
+        <h1>Unsolved Mysteries: TwitOff Edition</h1>
+        <p>Content for Twitoff will go here</p>
+
+        <u1>
+            {% for user in users %}
+            <li>{{user.id}} - {{user.name }}</li>
+            {% endfor %}
+        </u1>
+    </body>
+
+</html>
